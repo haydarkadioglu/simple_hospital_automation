@@ -1,0 +1,3 @@
+Poliklinik 2;132;20:08;EEG;201;4;150
+Poliklinik 4;133;20:09;EKG;101;1;120
+Poliklinik 3;134;20:09;Muayne;301;1;100

@@ -1,0 +1,3 @@
+3;Hasan;Akdağ;20.12.2023;Poliklinik 1;101;Konya Devlet Hastanesi
+5;Necati;Ülker;21.12.2023;Poliklinik 2;2016;Konya Devlet Hastanesi
+6;Haydar;Haydar;31 December 2023;Poliklinik 1;101;Konya Devlet Hastanesi
