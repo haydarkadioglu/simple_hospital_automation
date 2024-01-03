@@ -6,8 +6,6 @@
         {
             InitializeComponent();
             textBox2.PasswordChar = '*';
-            textBox2.Text = "sys";
-            textBox1.Text = "sys";
         }
         private void button2_Click(object sender, EventArgs e)
         {
