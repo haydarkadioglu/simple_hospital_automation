@@ -6,6 +6,14 @@
         {
             InitializeComponent();
             textBox2.PasswordChar = '*';
+<<<<<<< HEAD
+            textBox1.Text = "sys";
+            textBox2.Text = "sys";
+
+=======
+            textBox2.Text = "sys";
+            textBox1.Text = "sys";
+>>>>>>> 5107ebe6f11d2ea41d170f23592df35c41dbcba5
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -57,6 +65,12 @@
         private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Form5 frm = new Form5();
+            frm.Show();
         }
     }
 }

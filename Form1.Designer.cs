@@ -28,93 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            button1 = new Button();
+            button2 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            button3 = new Button();
+            toolStrip1 = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            toolStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 220);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Giriş";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(12, 275);
+            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 52);
+            button1.TabIndex = 0;
+            button1.Text = "Giriş";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(195, 220);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 42);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Temizle";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(195, 275);
+            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Name = "button2";
+            button2.Size = new Size(93, 52);
+            button2.TabIndex = 1;
+            button2.Text = "Temizle";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 22);
-            this.textBox1.TabIndex = 2;
+            textBox1.Location = new Point(172, 62);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(138, 27);
+            textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 22);
-            this.textBox2.TabIndex = 3;
+            textBox2.Location = new Point(172, 98);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(138, 27);
+            textBox2.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(58, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 22);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Kullanıcı Adı: ";
+            label1.Location = new Point(58, 62);
+            label1.Name = "label1";
+            label1.Size = new Size(89, 28);
+            label1.TabIndex = 4;
+            label1.Text = "Kullanıcı Adı: ";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(99, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 22);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Şifre: ";
+            label2.Location = new Point(99, 101);
+            label2.Name = "label2";
+            label2.Size = new Size(48, 28);
+            label2.TabIndex = 5;
+            label2.Text = "Şifre: ";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(364, 220);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 42);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Çıkış";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Location = new Point(364, 275);
+            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Name = "button3";
+            button3.Size = new Size(93, 52);
+            button3.TabIndex = 6;
+            button3.Text = "Çıkış";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // toolStrip1
+            // 
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1 });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(469, 27);
+            toolStrip1.TabIndex = 7;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(100, 24);
+            toolStripButton1.Text = "Kullanıcı Ekle";
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(469, 274);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(469, 342);
+            Controls.Add(toolStrip1);
+            Controls.Add(button3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            Text = "Form1";
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -126,6 +158,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
     }
 }
 

@@ -17,3 +17,6 @@ C:\Users\ahayd\Desktop\dönem 5\pro3 csharp\hospital_automation\hospital_automat
 C:\Users\ahayd\Desktop\dönem 5\pro3 csharp\hospital_automation\hospital_automation\bin\Debug\net8.0-windows\hospital_automation.pdb
 C:\Users\ahayd\Desktop\dönem 5\pro3 csharp\hospital_automation\hospital_automation\obj\Debug\net8.0-windows\hospital_automation.genruntimeconfig.cache
 C:\Users\ahayd\Desktop\dönem 5\pro3 csharp\hospital_automation\hospital_automation\obj\Debug\net8.0-windows\ref\hospital_automation.dll
+C:\Users\ahayd\Desktop\dönem 5\pro3 csharp\hospital_automation\hospital_automation\obj\Debug\net8.0-windows\hospital_automation.Properties.Resources.resources
+C:\Users\ahayd\Desktop\dönem 5\pro3 csharp\hospital_automation\hospital_automation\obj\Debug\net8.0-windows\hospital_automation.Form5.resources
+C:\Users\ahayd\Desktop\dönem 5\pro3 csharp\hospital_automation\hospital_automation\obj\Debug\net8.0-windows\hospital_automation.Form6.resources
