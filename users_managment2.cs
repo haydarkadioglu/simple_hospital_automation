@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace hospital_automation
 {
-    public partial class Form6 : Form
+    public partial class users_managment2 : Form
     {
-        public Form6()
+        public users_managment2()
         {
             InitializeComponent();
             dosya_oku();

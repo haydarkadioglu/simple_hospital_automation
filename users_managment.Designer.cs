@@ -1,6 +1,6 @@
 ﻿namespace hospital_automation
 {
-    partial class Form5
+    partial class users_managment
     {
         /// <summary>
         /// Required designer variable.
@@ -99,7 +99,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Name = "Form5";
-            Text = "Form5";
+            Text = "Users Managment";
             ResumeLayout(false);
             PerformLayout();
         }

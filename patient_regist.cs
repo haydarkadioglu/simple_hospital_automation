@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace hospital_automation
 {
-    public partial class Form4 : Form
+    public partial class patient_regist : Form
     {
-        public Form4()
+        public patient_regist()
         {
             InitializeComponent();
         }

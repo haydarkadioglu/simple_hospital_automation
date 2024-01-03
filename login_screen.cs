@@ -1,19 +1,20 @@
 ﻿namespace hospital_automation
 {
-    public partial class Form1 : Form
+    public partial class login_screen : Form
     {
-        public Form1()
+        public login_screen()
         {
             InitializeComponent();
             textBox2.PasswordChar = '*';
-
-            textBox2.Text = "sys";
-            textBox1.Text = "sys";
-
+            textBox1.Text = "haydar";
+            textBox2.Text = "haydar";
         }
         private void button2_Click(object sender, EventArgs e)
         {
-          
+            /*using (StreamWriter writer = new StreamWriter("users.txt", true))
+            {
+                writer.WriteLine($"{textBox1.Text};{textBox2.Text}");
+            }*/
             textBox1.Clear();
             textBox2.Clear();
 
@@ -49,7 +50,7 @@
             }
             else
             {
-                Form2 frm = new Form2();
+                main_page frm = new main_page();
                 frm.Show();
                 this.Hide();
             }
@@ -62,7 +63,7 @@
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            Form5 frm = new Form5();
+            users_managment frm = new users_managment();
             frm.Show();
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace hospital_automation
 {
-    partial class Form1
+    partial class login_screen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login_screen));
             button1 = new Button();
             button2 = new Button();
             textBox1 = new TextBox();

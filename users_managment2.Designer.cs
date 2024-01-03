@@ -1,6 +1,6 @@
 ﻿namespace hospital_automation
 {
-    partial class Form6
+    partial class users_managment2
     {
         /// <summary>
         /// Required designer variable.

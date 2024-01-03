@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace hospital_automation
 {
-    public partial class Form3 : Form
+    public partial class patient_info : Form
     {
         private string[] datas, datas1;
-        public Form3()
+        public patient_info()
         {
             InitializeComponent();
         }
@@ -46,7 +46,7 @@ namespace hospital_automation
 
         private void button_exit_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            main_page form2 = new main_page();
             form2.Show();
             this.Close();
         }

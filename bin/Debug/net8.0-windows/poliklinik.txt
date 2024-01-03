@@ -1,0 +1,5 @@
+Poliklinik 1;102;101
+Poliklinik 2;201
+Poliklinik 3;301
+Poliklinik 4;401;402
+KBB;601

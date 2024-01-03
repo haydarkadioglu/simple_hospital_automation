@@ -1,6 +1,6 @@
 ﻿namespace hospital_automation
 {
-    partial class Form3
+    partial class patient_info
     {
         /// <summary>
         /// Required designer variable.

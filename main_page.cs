@@ -13,16 +13,33 @@ using static System.Windows.Forms.LinkLabel;
 
 namespace hospital_automation
 {
-    public partial class Form2 : Form
+    public partial class main_page : Form
     {
-        public Form2()
+        public main_page()
         {
             InitializeComponent();
-            dosya_oku();
+            read_file();
             textBox_sira.Text = siraVer().ToString();
+            read_policlinic_file();
         }
 
-        private void dosya_oku()
+        private void read_policlinic_file()
+        {
+            string dosya_yolu = "poliklinik.txt";
+
+            string[] datas = File.ReadAllLines(dosya_yolu);
+            foreach (string data in datas)
+            {
+                string[] strings = data.Split(";");
+                comboBox_klinik.Items.Add(strings[0]);
+                for (int i = 1; i < strings.Length; i++)
+                {
+                    comboBox_kod.Items.Add(strings[i]);
+                }
+            }
+        }
+
+        private void read_file()
         {
             string dosya_yolu = "yapilan_islem.txt";
 
@@ -95,7 +112,7 @@ namespace hospital_automation
 
             if (lastLine != null)
             {
-                return (int.Parse(lastLine[1])+1);
+                return (int.Parse(lastLine[1]) + 1);
             }
             return 1;
 
@@ -120,7 +137,7 @@ namespace hospital_automation
 
         private void hasta_bilgi_Click(object sender, EventArgs e)
         {
-            Form3 frm = new Form3();
+            patient_info frm = new patient_info();
             frm.Show();
             this.Hide();
         }
@@ -167,8 +184,15 @@ namespace hospital_automation
 
         private void button_yeni_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            patient_regist form4 = new patient_regist();
             form4.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            policlinic_regist form = new policlinic_regist();
+            form.Show();
+            this.Close();
         }
     }
 }

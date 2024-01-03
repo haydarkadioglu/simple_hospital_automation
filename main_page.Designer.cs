@@ -1,6 +1,6 @@
 ﻿namespace hospital_automation
 {
-    partial class Form2
+    partial class main_page
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_page));
             groupBox1 = new GroupBox();
             dataGridView1 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
@@ -80,6 +81,9 @@
             button_taburcu = new Button();
             button_sil = new Button();
             button_yeni = new Button();
+            toolStrip1 = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
+            toolStripButton2 = new ToolStripButton();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox2.SuspendLayout();
@@ -91,13 +95,14 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             groupBox8.SuspendLayout();
             groupBox9.SuspendLayout();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.AppWorkspace;
             groupBox1.Controls.Add(dataGridView1);
-            groupBox1.Location = new Point(12, 252);
+            groupBox1.Location = new Point(12, 277);
             groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 4, 3, 4);
@@ -191,7 +196,7 @@
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(label2);
             groupBox2.Controls.Add(label1);
-            groupBox2.Location = new Point(12, 15);
+            groupBox2.Location = new Point(12, 29);
             groupBox2.Margin = new Padding(3, 4, 3, 4);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(3, 4, 3, 4);
@@ -347,7 +352,7 @@
             groupBox3.BackColor = SystemColors.ActiveCaption;
             groupBox3.Controls.Add(label8);
             groupBox3.Controls.Add(comboBox_klinik);
-            groupBox3.Location = new Point(12, 164);
+            groupBox3.Location = new Point(12, 183);
             groupBox3.Margin = new Padding(3, 4, 3, 4);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(3, 4, 3, 4);
@@ -367,7 +372,6 @@
             // comboBox_klinik
             // 
             comboBox_klinik.FormattingEnabled = true;
-            comboBox_klinik.Items.AddRange(new object[] { "Poliklinik 1", "Poliklinik 2", "Poliklinik 3", "Poliklinik 4" });
             comboBox_klinik.Location = new Point(6, 44);
             comboBox_klinik.Margin = new Padding(3, 4, 3, 4);
             comboBox_klinik.Name = "comboBox_klinik";
@@ -379,7 +383,7 @@
             groupBox4.BackColor = SystemColors.ActiveCaption;
             groupBox4.Controls.Add(textBox_sira);
             groupBox4.Controls.Add(label9);
-            groupBox4.Location = new Point(196, 164);
+            groupBox4.Location = new Point(196, 183);
             groupBox4.Margin = new Padding(3, 4, 3, 4);
             groupBox4.Name = "groupBox4";
             groupBox4.Padding = new Padding(3, 4, 3, 4);
@@ -409,7 +413,7 @@
             groupBox5.BackColor = SystemColors.ActiveCaption;
             groupBox5.Controls.Add(label10);
             groupBox5.Controls.Add(comboBox_islem);
-            groupBox5.Location = new Point(315, 164);
+            groupBox5.Location = new Point(315, 183);
             groupBox5.Margin = new Padding(3, 4, 3, 4);
             groupBox5.Name = "groupBox5";
             groupBox5.Padding = new Padding(3, 4, 3, 4);
@@ -441,7 +445,7 @@
             groupBox6.BackColor = SystemColors.ActiveCaption;
             groupBox6.Controls.Add(label11);
             groupBox6.Controls.Add(comboBox_kod);
-            groupBox6.Location = new Point(496, 164);
+            groupBox6.Location = new Point(496, 183);
             groupBox6.Margin = new Padding(3, 4, 3, 4);
             groupBox6.Name = "groupBox6";
             groupBox6.Padding = new Padding(3, 4, 3, 4);
@@ -461,7 +465,6 @@
             // comboBox_kod
             // 
             comboBox_kod.FormattingEnabled = true;
-            comboBox_kod.Items.AddRange(new object[] { "101", "201", "301", "401" });
             comboBox_kod.Location = new Point(6, 44);
             comboBox_kod.Margin = new Padding(3, 4, 3, 4);
             comboBox_kod.Name = "comboBox_kod";
@@ -473,7 +476,7 @@
             groupBox7.BackColor = SystemColors.ActiveCaption;
             groupBox7.Controls.Add(numericUpDown1);
             groupBox7.Controls.Add(label12);
-            groupBox7.Location = new Point(603, 163);
+            groupBox7.Location = new Point(603, 182);
             groupBox7.Margin = new Padding(3, 4, 3, 4);
             groupBox7.Name = "groupBox7";
             groupBox7.Padding = new Padding(3, 4, 3, 4);
@@ -502,7 +505,7 @@
             groupBox8.BackColor = SystemColors.ActiveCaption;
             groupBox8.Controls.Add(textBox_fiyat);
             groupBox8.Controls.Add(label13);
-            groupBox8.Location = new Point(706, 164);
+            groupBox8.Location = new Point(706, 183);
             groupBox8.Margin = new Padding(3, 4, 3, 4);
             groupBox8.Name = "groupBox8";
             groupBox8.Padding = new Padding(3, 4, 3, 4);
@@ -529,7 +532,7 @@
             // 
             // button_ekle
             // 
-            button_ekle.Location = new Point(825, 173);
+            button_ekle.Location = new Point(831, 192);
             button_ekle.Margin = new Padding(3, 4, 3, 4);
             button_ekle.Name = "button_ekle";
             button_ekle.Size = new Size(119, 71);
@@ -547,7 +550,7 @@
             groupBox9.Controls.Add(button_taburcu);
             groupBox9.Controls.Add(button_sil);
             groupBox9.Controls.Add(button_yeni);
-            groupBox9.Location = new Point(12, 574);
+            groupBox9.Location = new Point(12, 599);
             groupBox9.Margin = new Padding(3, 4, 3, 4);
             groupBox9.Name = "groupBox9";
             groupBox9.Padding = new Padding(3, 4, 3, 4);
@@ -619,12 +622,42 @@
             button_yeni.UseVisualStyleBackColor = true;
             button_yeni.Click += button_yeni_Click;
             // 
-            // Form2
+            // toolStrip1
+            // 
+            toolStrip1.ImageScalingSize = new Size(20, 20);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1, toolStripButton2 });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(958, 27);
+            toolStrip1.TabIndex = 10;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(127, 24);
+            toolStripButton1.Text = "Poliklinik Tanıtma";
+            toolStripButton1.Click += toolStripButton1_Click;
+            // 
+            // toolStripButton2
+            // 
+            toolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton2.Image = (Image)resources.GetObject("toolStripButton2.Image");
+            toolStripButton2.ImageTransparentColor = Color.Magenta;
+            toolStripButton2.Name = "toolStripButton2";
+            toolStripButton2.Size = new Size(113, 24);
+            toolStripButton2.Text = "Rapor İşlemleri";
+            // 
+            // main_page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Highlight;
-            ClientSize = new Size(957, 678);
+            ClientSize = new Size(958, 698);
+            Controls.Add(toolStrip1);
             Controls.Add(groupBox9);
             Controls.Add(button_ekle);
             Controls.Add(groupBox8);
@@ -636,7 +669,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Form2";
+            Name = "main_page";
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox2.ResumeLayout(false);
@@ -655,7 +688,10 @@
             groupBox8.ResumeLayout(false);
             groupBox8.PerformLayout();
             groupBox9.ResumeLayout(false);
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -712,5 +748,8 @@
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column7;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
+        private ToolStripButton toolStripButton2;
     }
 }

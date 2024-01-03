@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace hospital_automation
 {
-    public partial class Form5 : Form
+    public partial class users_managment : Form
     {
-        public Form5()
+        public users_managment()
         {
             InitializeComponent();
             textBox2.PasswordChar = '*';
@@ -22,7 +22,7 @@ namespace hospital_automation
         {
             if (textBox1.Text == "sys" && textBox2.Text == "sys")
             {
-                Form6 form6 = new Form6();
+                users_managment2 form6 = new users_managment2();
                 form6.Show();
                 this.Hide();
             }
