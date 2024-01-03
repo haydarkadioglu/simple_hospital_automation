@@ -13,10 +13,7 @@
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            /*using (StreamWriter writer = new StreamWriter("users.txt", true))
-            {
-                writer.WriteLine($"{textBox1.Text};{textBox2.Text}");
-            }*/
+          
             textBox1.Clear();
             textBox2.Clear();
 
